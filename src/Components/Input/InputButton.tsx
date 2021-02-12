@@ -1,7 +1,7 @@
 import { useState, useCallback } from "react";
 import InputBox from "./InputBox";
 import style from "./InputButtonStyle.module.scss";
-import { DataProps } from "../../Context";
+import { DataProps } from "../../Types";
 
 const InputButton: React.FC<DataProps> = ({ addData, allData }) => {
   const [modalState, setModalState] = useState<boolean>(false);

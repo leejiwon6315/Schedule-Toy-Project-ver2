@@ -3,7 +3,7 @@ import { daysData } from "../../../dataBundle";
 import InputDayList from "./InputDayList";
 import InputTimeList from "./InputTimeList";
 import style from "../InputBoxStyle.module.scss";
-import { ISchedule } from "../../../Context";
+import { ISchedule } from "../../../Types";
 
 interface Props {
   index: number;

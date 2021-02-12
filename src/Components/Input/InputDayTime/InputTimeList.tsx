@@ -1,6 +1,6 @@
 import { hourData, minData } from "../../../dataBundle";
 import style from "../InputBoxStyle.module.scss";
-import { ISchedule } from "../../../Context";
+import { ISchedule } from "../../../Types";
 
 interface Props {
   handleChange: React.ChangeEventHandler;

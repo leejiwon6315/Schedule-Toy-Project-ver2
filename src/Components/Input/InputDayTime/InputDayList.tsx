@@ -18,11 +18,7 @@ const InputDayList: React.FC<Props> = ({ data, handleToggle }) => {
 
   return (
     <li
-      className={style.day_check}
-      // style={{
-      //   backgroundColor: checked ? "rgb(93, 185, 170)" : null,
-      //   color: checked ? "white" : null,
-      // }}
+      className={checked ? style.day_check_true : style.day_check}
       onClick={handleOnOff}
       value={id}
     >

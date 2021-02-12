@@ -2,7 +2,7 @@ import { useCallback, useState } from "react";
 import useConfirm from "../../Hook/useConfirm";
 import { daysData, colorCode } from "../../dataBundle";
 import style from "./ScheduleStyle.module.scss";
-import { ISchedule } from "../../Context";
+import { ISchedule } from "../../Types";
 
 interface Props {
   id: number;
@@ -65,19 +65,19 @@ const ScheduleItem: React.FC<Props & ISchedule> = ({
       >
         <p onClick={confirmDelete}>×</p>
       </div>
-      {/* <div style={timeHeight < 34 ? { lineHeight: "12px" } : null}>
-        <div name="name" style={timeHeight < 34 ? { fontSize: "11px" } : null}>
+      <div style={{ lineHeight: `${timeHeight < 34 ? "12px" : "1.0"}` }}>
+        <div style={{ fontSize: `${timeHeight < 34 ? 11 : 12}px` }}>
           {name.length > 7 ? `${name.slice(0, 6)}...` : name}
         </div>
         <div>{timeHeight >= 54 ? place : null}</div>
         <div>{timeHeight >= 70 ? `${daysData[date - 1].name}요일` : null}</div>
-        <div style={timeHeight < 34 ? { fontSize: "11px" } : null}>
+        <div style={{ fontSize: `${timeHeight < 34 ? 11 : 12}px` }}>
           {startHour < 10 ? `0${startHour}` : startHour}:
           {startMin < 10 ? `0${startMin}` : startMin}~
           {endHour < 10 ? `0${endHour}` : endHour}:
           {endMin < 10 ? `0${endMin}` : endMin}
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };

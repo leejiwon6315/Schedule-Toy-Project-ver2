@@ -2,7 +2,7 @@ import { useState, useCallback, useRef } from "react";
 import InputText from "./InputText";
 import InputDayTime from "./InputDayTime";
 import style from "./InputBoxStyle.module.scss";
-import { DataProps, Schedule, IData, IInput } from "../../Context";
+import { DataProps, Schedule, IData, IInput } from "../../Types";
 
 interface ModalType {
   modalState: boolean;

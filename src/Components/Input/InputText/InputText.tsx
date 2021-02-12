@@ -1,5 +1,5 @@
 import style from "../InputBoxStyle.module.scss";
-import { IInput } from "../../../Context";
+import { IInput } from "../../../Types";
 
 interface Props {
   input: IInput;

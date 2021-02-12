@@ -1,6 +1,6 @@
 import ScheduleItem from "./ScheduleItem";
 import style from "./ScheduleStyle.module.scss";
-import { AllData } from "../../Context";
+import { AllData } from "../../Types";
 
 interface Props {
   allData: AllData;

@@ -3,7 +3,7 @@ import InputButton from "./Components/Input/InputButton";
 import ScheduleList from "./Components/ScheduleList";
 import TimeLine from "./Components/TimeLine";
 import style from "./App.module.scss";
-import { AllData, IData } from "./Context";
+import { AllData, IData } from "./Types";
 
 const App: React.FC = () => {
   const [allData, setAllData] = useState<AllData>([]);
