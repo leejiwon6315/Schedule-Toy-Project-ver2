@@ -1,0 +1,55 @@
+.schedule_list {
+  margin: 0;
+  padding: 0;
+  height: 962px;
+  position: absolute;
+  z-index: 50;
+  color: rgb(0, 0, 0);
+
+  .schedule_item_wrapper {
+    font-size: 12px;
+    text-align: center;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 83px;
+    margin: 2px 2px 0 2px;
+    padding: 2px;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px 1px rgba(10, 10, 10, 0.233);
+
+    .item_delete_button {
+      position: absolute;
+      top: 4px;
+      right: 6px;
+      color: rgb(40, 40, 40);
+      font-size: 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: transparent;
+
+      p {
+        cursor: pointer;
+
+        &:hover {
+          color: rgba(0, 0, 0, 0.596);
+        }
+      }
+    }
+
+    .schedule_item_sub_wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+      padding: 2px;
+      margin: -2px -2px 0 -2px;
+    }
+  }
+}
