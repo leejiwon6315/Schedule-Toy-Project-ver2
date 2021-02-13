@@ -21,13 +21,9 @@ export type IData = {
   schedule: Schedule;
 };
 
-export type AllData = Array<IData>;
+export type AllData = IData[];
 
 export type DataProps = {
   addData: Function;
   allData: AllData;
 };
-
-// type Action =
-//   | { type: "ADD_SCHEDULE"; data: AllData }
-//   | { type: "REMOVE_SCHEDULE"; id: number; index: number };
