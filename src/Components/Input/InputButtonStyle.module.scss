@@ -1,4 +1,7 @@
+@import "../../util.module.scss";
+
 .input_button {
+  @include flex_col;
   z-index: 99;
   position: fixed;
   bottom: 50px;
@@ -12,8 +15,6 @@
   box-shadow: 0 1px 3px 2px rgba(10, 10, 10, 0.26);
   color: white;
   background-color: rgb(75, 148, 137);
-  display: flex;
-  flex-direction: column;
   align-items: center;
   cursor: pointer;
 

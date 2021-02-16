@@ -1,13 +1,14 @@
+@import "../../util.module.scss";
+
 .table_wrapper {
+  @include flex_col;
   position: static;
   background-color: white;
   width: fit-content;
-  display: flex;
-  flex-direction: column;
   text-align: center;
 
   .table_header {
-    border: 1px solid rgba(49, 49, 49, 0.24);
+    border: $gray_border;
     border-right: none;
     border-spacing: 0;
     color: rgb(70, 70, 70);
@@ -19,11 +20,11 @@
     }
     th {
       width: 80px;
-      border-right: 1px solid rgba(49, 49, 49, 0.24);
+      border-right: $gray_border;
     }
 
     .day {
-      border-right: 1px solid rgba(49, 49, 49, 0.24);
+      border-right: $gray_border;
       width: 95px;
       margin: 0;
     }
@@ -35,16 +36,14 @@
 
     .times {
       .time {
+        @include align_center;
         color: rgb(70, 70, 70);
         font-size: 14px;
         font-weight: 400;
-        text-align: center;
         width: 80px;
         height: 71px;
         display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid rgba(49, 49, 49, 0.24);
+        border: $gray_border;
         border-top: none;
       }
     }
@@ -54,7 +53,7 @@
         .grid {
           width: 95px;
           height: 35px;
-          border: 1px solid rgba(49, 49, 49, 0.24);
+          border: $gray_border;
           border-left: none;
           border-top: none;
         }
