@@ -1,3 +1,4 @@
+import React from "react";
 import ScheduleItem from "./ScheduleItem";
 import style from "./ScheduleStyle.module.scss";
 import { AllData } from "../../Types";
@@ -26,4 +27,4 @@ const ScheduleList: React.FC<Props> = ({ allData, removeData }) => {
   );
 };
 
-export default ScheduleList;
+export default React.memo(ScheduleList);

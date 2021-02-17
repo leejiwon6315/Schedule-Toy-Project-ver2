@@ -1,4 +1,4 @@
-import { useCallback, useState } from "react";
+import React, { useCallback, useState } from "react";
 import useConfirm from "../../Hook/useConfirm";
 import { daysData, colorCode } from "../../dataBundle";
 import style from "./ScheduleStyle.module.scss";
@@ -82,4 +82,4 @@ const ScheduleItem: React.FC<Props & ISchedule> = ({
   );
 };
 
-export default ScheduleItem;
+export default React.memo(ScheduleItem);
